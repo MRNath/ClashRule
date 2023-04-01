@@ -213,3 +213,4 @@
 >   >   >   > 推荐开启
 >   >   >
 >   >   > * 待补充
+https://cdn.jsdelivr.net/gh/MRNath/ClashRule@main/GeneralClashRule.ini
