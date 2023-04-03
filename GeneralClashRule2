@@ -1,0 +1,64 @@
+[custom]
+
+;设置规则标志位
+ruleset=🤖 ChatGPT,https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/ChatGPT.list
+ruleset=🎯 国内流量,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPs_Classical.yaml
+ruleset=🚀 国外流量,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical.yaml
+ruleset=Scholar,clash-classic:https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalScholar/GlobalScholar.yaml
+ruleset=🛑 广告拦截,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical.yaml
+ruleset=🎥 Netflix,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+ruleset=🐹 DisneyPlus,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+ruleset=🎬 EMBY,clash-classic:https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Emby.yaml
+ruleset=📺 Bilibili,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+ruleset=🎵 Spotify,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+ruleset=🎶 TikTok,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+ruleset=🌍 国外媒体,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml
+ruleset=🌏 国内媒体,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+ruleset=Ⓜ️ 微软云盘,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml
+ruleset=Ⓜ️ 微软服务,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+ruleset=🍎 苹果服务,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+ruleset=📲 Telegram,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+ruleset=🎮 游戏平台,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml
+
+ruleset=🎯 国内流量,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
+;设置规则标志位
+
+;设置分组标志位
+custom_proxy_group=♻️ 自动选择`url-test`(?!.*((?i)址|回国|校园|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|TG))`http://www.cloudflare.com/generate_204`300,,60
+custom_proxy_group=🚀 国外流量`select`[]♻️ 自动选择`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]DIRECT
+custom_proxy_group=✈️ 手动选择`select`(?!.*((?i)址|回国|校园|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|TG))
+custom_proxy_group=🎯 国内流量`select`[]DIRECT`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`
+custom_proxy_group=🐟 漏网之鱼`select`[]🚀 国外流量`[]🎯 国内流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🛑 广告拦截`select`[]REJECT`[]🎯 国内流量`[]🚀 国外流量
+custom_proxy_group=🎥 Netflix`select`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🐹 DisneyPlus`select`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🎬 EMBY`select`[]🚀 国外流量`[]🎯 国内流量`(Emby|emby)`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=📺 Bilibili`select`[]🎯 国内流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`
+custom_proxy_group=🎵 Spotify`select`[]🎯 国内流量`(菲律宾|PH)`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🎶 TikTok`select`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🌍 国外媒体`select`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🌏 国内媒体`select`[]🎯 国内流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=📲 Telegram`select`[]🚀 国外流量`[]🎯 国内流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=Scholar`select`[]🎯 国内流量`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🤖 ChatGPT`select`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=Ⓜ️ 微软云盘`select`[]🎯 国内流量`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=Ⓜ️ 微软服务`select`[]🎯 国内流量`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🍎 苹果服务`select`[]🎯 国内流量`[]🚀 国外流量`[]✈️ 手动选择`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇸🇬 狮城节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点
+custom_proxy_group=🎮 游戏平台`select`[]🎯 国内流量`^(?=.*((?i)IPLC|游戏|GAME))(?!.*((?i)回国|校园|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|TG)).*$`[]🚀 国外流量`[]✈️ 手动选择
+custom_proxy_group=🇭🇰 香港节点`select`[]🇭🇰 香港测速`^(?=.*((?i)🇭🇰|香港|HK|Hong))(?!.*((?i)回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$
+custom_proxy_group=🇯🇵 日本节点`select`[]🇯🇵 日本测速`^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|JP|Japan))(?!.*((?i)回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$
+custom_proxy_group=🇺🇲 美国节点`select`[]🇺🇲 美国测速`^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|UnitedStates))(?!.*((?i)回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$
+custom_proxy_group=🇨🇳 台湾节点`select`[]🇨🇳 台湾测速`^(?=.*((?i)🇹🇼|台湾|TW|Tai))(?!.*((?i)回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$
+custom_proxy_group=🇸🇬 狮城节点`select`[]🇸🇬 狮城测速`^(?=.*((?i)🇸🇬|新加坡|狮|SG|Singapore))(?!.*((?i)IPLC|回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$
+custom_proxy_group=🇰🇷 韩国节点`select`[]🇰🇷 韩国测速`^(?=.*((?i)🇰🇷|韩国|韓|首尔|KR|Korea))(?!.*((?i)IPLC|回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$
+custom_proxy_group=🇭🇰 香港测速`url-test`^(?=.*((?i)🇭🇰|香港|HK|Hong))(?!.*((?i)IPLC|回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$`http://www.cloudflare.com/generate_204`300,,60
+custom_proxy_group=🇯🇵 日本测速`url-test`^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|JP|Japan))(?!.*((?i)IPLC|回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$`http://www.cloudflare.com/generate_204`300,,60
+custom_proxy_group=🇺🇲 美国测速`url-test`^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|UnitedStates))(?!.*((?i)回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$`http://www.cloudflare.com/generate_204`300,,60
+custom_proxy_group=🇨🇳 台湾测速`url-test`^(?=.*((?i)🇹🇼|台湾|TW|Tai))(?!.*((?i)回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$`http://www.cloudflare.com/generate_204`300,,60
+custom_proxy_group=🇸🇬 狮城测速`url-test`^(?=.*((?i)🇸🇬|新加坡|狮|SG|Singapore))(?!.*((?i)回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$`http://www.cloudflare.com/generate_204`300,,60
+custom_proxy_group=🇰🇷 韩国测速`url-test`^(?=.*((?i)🇰🇷|韩国|韓|首尔|KR|Korea))(?!.*((?i)回国|校园|游戏|教育|久虚|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|群|GAME|TG)).*$`http://www.cloudflare.com/generate_204`300,,60
+;设置分组标志位
+
+enable_rule_generator=true
+overwrite_original_rules=true
